@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('charts', function (Blueprint $table) {
             $table->id();
-            $table->date('birthstamp');
+            $table->string('birthdate');
+            $table->string('birthtime');
             $table->string('birthplace');
             $table->string('gender');
             $table->string('lat');

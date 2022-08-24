@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\chartController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,6 +25,8 @@ Route::get('/', function () {
 
 Route::controller(chartController::class)->group( function() {
     Route::get('/','index');
-    Route::get('/chartinput','chartinput');
+    Route::get('/chart','input')->name('chart');
+    Route::get('/success','success')->name('success');
+    Route::post('/save', 'save')->name('save')->middleware('validatechartMiddleware');
 });
 
