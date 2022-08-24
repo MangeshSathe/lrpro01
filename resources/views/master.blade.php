@@ -50,16 +50,19 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="{{route('/chart')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Browse horoscopes</a>
+          <a class="nav-link" href="{{route('/chart')}}">Add chart</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Mundane events</a>
+          <a class="nav-link" href="{{route('/chart')}}">Browse horoscopes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Planetory alignments</a>
+          <a class="nav-link" href="{{route('/chart')}}">Mundane events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('/chart')}}">Planetory alignments</a>
         </li>
       </ul>
     </div>
